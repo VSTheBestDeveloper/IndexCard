@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+    $(document).ready(function () {
+        $("div[typeof=Desc]").click(function () {
+            $("div[typeof=Desc]").css({ "background-color": "rgba(3, 105, 4, 0.46)" });
+        });
+    });
+</script>
+<div class="jumbotron" />
+<h1>My Microsoft Story</h1>
+<div class="row">
+    <div class="col-md-8">
+        <p class="lead">
+            <ul id="list" style="list-style-type:square">
+                <li id="test">I am an ardent fan of Microsoft for many reasons. Microsoft used the same Visual Studio solution for QA automation and development. </li>
+                This bridged the gap between automation and development.
+                <li>Automatic test generation by Intellitest was introduced in C# 6.0. This along with 100% code coverage has made testing totally automatic.</li>
+                <li>There is excellent tool support in MSDN forums. Code samples and walk throughs in Microsoft blogs.</li>
+                <li>Channel 9 videos are awesome. I learnt a lot just by watching the <a href="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch?sort=status&amp;direction=desc&amp;page=3" target="_blank">Visual Studio 2017 Launch videos.</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/100/player" width="600" height="400" allowFullScreen frameBorder="0"></iframe>
+    </div>
+</div>
+<div class="row">
+    <div typeof="Desc" class="col-md-4">
+        <h2>Background</h2>
+        <div typeof="Explanation">
+            <p>
+                I started my career as a QA automation engineer using the then Mercury tools.
+            </p>
+            <p>
+                Was introduced to Microsoft toolset in 2008 - TFS, web tests, Coded tests and Xamarin.
+            </p>
+        </div>
+    </div>
+    <div typeof="Desc" class="col-md-4">
+        <h2>Preparation</h2>
+        <div typeof="Explanation">
+            <p>
+                <a href="https://www.pluralsight.com" target="_blank"><img src="~/Resources/pluralsight-logo-transparent.png" alt="Pluralsight" style="width:118px;height:32px;"> </a> is my tutor.
+            </p>
+            <p>
+                Built simple web and mobile apps.
+            </p>
+            <p id="training">
+                Attended <a href="~/Resources/Mytranscript.png" target="_blank">
+                    'Instructor-Led training'
+                </a>  by Microsoft's Learning Partners.
+            </p>
+            <p>Read the reference books and took practice tests. </p>
+        </div>
+    </div>
+    <div typeof="Desc" class="col-md-4">
+        <h2>Certification</h2>
+        <div typeof="Explanation">
+            <p>My ambition is to become a software architect.</p>
+            <p>One step towards this will be successfully passing <a href="https://www.microsoft.com/en-us/learning/mcsd-app-builder-certification.aspx" target="_blank"> <img src="~/Resources/McsdAppBuilder_001.png" alt="McsdClip" style="width:300px;height:62px;">. </a></p>
+        </div>
+    </div>
+</div>

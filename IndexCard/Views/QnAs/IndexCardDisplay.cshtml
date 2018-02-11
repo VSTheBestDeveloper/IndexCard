@@ -1,0 +1,29 @@
+﻿@model IndexCard.Models.QnA
+
+@{
+    ViewBag.Title = "IndexCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>IndexCard</h2>
+
+<div style="padding-top:25px">
+
+    <div class="row" style="padding-top:25px" >
+        <button class="btn-indexcard">@Model.Question</button>
+    </div>
+    <div class="row" style="padding-top:25px; padding-bottom:45px">
+        <button class="btn-indexcard" id="answer" onclick="ButtonTextChange(this, '@Model.Answer')">
+            <ul>
+                Answer
+            </ul>
+        </button>
+    </div>
+</div>
+
+<div class="row" style="padding-top:15px">
+    <p class="text-left">
+        @Html.ActionLink("Next", "IndexCardDisplay")
+    </p>
+
+</div>

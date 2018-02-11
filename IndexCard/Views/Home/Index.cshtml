@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Index Card application</h1>
+    <p class="lead">Cool way to learn your subject and exams.</p>
+    <img src="~/Resources/index-cards-building-engineering.png" class="center-block img-responsive" />
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.ActionLink("Admin Index", "Index", "QnAs")
+    </div>
+</div>
