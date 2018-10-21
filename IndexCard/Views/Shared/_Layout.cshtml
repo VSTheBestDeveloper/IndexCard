@@ -11,12 +11,6 @@
     @*<script type="text/javascript">if (window.location.hash == '#_=_') window.location.hash = '';</script>*@
 </head>
 <body>
-    <script>
-    function ButtonTextChange(obj, newText) {
-        var $this = $(obj);
-        $this.text(newText);
-    }
-    </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             @*<div class="navbar-header">
@@ -44,6 +38,10 @@
         @RenderBody()
         <hr />
         <footer>
+            <a href=https://www.buymeacoffee.com/nv6HDN0> 
+                <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" scale="-1">
+            </a>
+            <p></p>
             <p>&copy; @DateTime.Now.Year - IndexCard Application</p>
         </footer>
     </div>
@@ -51,5 +49,11 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        function ButtonTextChange(obj, newText) {
+            var $this = $(obj);
+            $this.text(newText);
+        }
+    </script>
 </body>
 </html>
